@@ -19,6 +19,7 @@ The ID's are hardcoded and directly linked with the capability of the device tha
 
 
 |TAG          |ID      |Purpose|
+|-------------|--------|---------------------------------------------------------|
 |CN_PRIO_CMD  |0x005   |High Prio Commands, e.g. bugwiper start/stop|
 |CN_CMD       |0x010   |Low Prio Commands, e.g. MC, ballast or bugs change|
 |CN_NMEA      |0x015   |Standard NMEA messages, e.g. GPGGA, GPRMC, etc.|
