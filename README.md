@@ -33,13 +33,13 @@ The API is defined as C++ class with featuring an interface to send data and cal
 The interface may look like this:
  
 
-CANMEA myStation();             
-myStation.sendLine( CN_NMEA, "$GPVTG,360.0,T,348.7,M,000.0,N,000.0,K*43" );
-float T=25.3;
-myStation.sendData( CN_SENS, sizeof(T), &T );
+CANMEA myStation();           <br>  
+myStation.sendLine( CN_NMEA, "$GPVTG,360.0,T,348.7,M,000.0,N,000.0,K*43" );<br>
+float T=25.3;<br>
+myStation.sendData( CN_SENS, sizeof(T), &T );<br>
 
-void myCallback( char* msg ){ log(msg); };     // User provided callback for receive
-myStation.attach( CN_NMEA, myCallback );
+void myCallback( char* msg ){ log(msg); };     // User provided callback for receive<br>
+myStation.attach( CN_NMEA, myCallback );<br>
 
 
 
