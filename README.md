@@ -27,4 +27,19 @@ The ID's are hardcoded and directly linked with the capability of the device tha
 |CN_PRIO_SENS |0x025   |High prio sensor data, such as temperature, voltage|
 |CN_SENS      |0x030   |Low prio sensor data, such as TE or Baro pressure data|
 
+The length of data to be transmitted is 80 bytes per message, same as for NMEA protocol.
+The API is defined as C++ class with featuring an interface to send data and callbacks for receive of data.
+
+The interface may look like this:
  
+
+CANMEA myStation();             
+myStation.sendLine( CN_NMEA, "$GPVTG,360.0,T,348.7,M,000.0,N,000.0,K*43" );
+float T=25.3;
+myStation.sendData( CN_SENS, sizeof(T), &T );
+
+void myCallback( char* msg ){ log(msg); };     // User provided callback for receive
+myStation.attach( CN_NMEA, myCallback );
+
+
+
