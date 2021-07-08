@@ -27,7 +27,7 @@ The ID's are hardcoded and directly linked with the capability of the device tha
 |CN_PRIO_SENS |0x025   |High prio sensor data, such as temperature, voltage|
 |CN_SENS      |0x030   |Low prio sensor data, such as TE or Baro pressure data|
 
-The length of data to be transmitted is 80 bytes per message, same as for NMEA protocol.
+The maximum length of data to be transmitted is 80 bytes per message, same as for NMEA protocol.
 The API is defined as C++ class with featuring an interface to send data and callbacks for receive of data.
 
 The interface may look like this:
