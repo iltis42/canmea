@@ -7,5 +7,6 @@ The protocol is directly above the CAN object layer that consist of an 11 bit ID
 
 <b><ID 11 bit><data 64 bit></b>
 
+To improve performance in noise environment, only the 11 bit ID format, and not the extended format will be used. This eases also the usage of libraries below that may not support extended format. 
 The lower the ID, the higher is the priority on the bus.
 
