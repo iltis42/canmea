@@ -16,13 +16,14 @@ The lower the ID, the higher is the priority on the bus.
 The ID shall indicate the source of message, and might be used for CPU efficient filtering at destination that might filter or not this type of messages.
   
 The ID's are hardcoded and directly linked with the capability of the device that takes part in CAN transmission. Devices are allowed to transmit up to 100 Messages of 8 byte data per second.  
-  
-TAG          ID      Purpose
-CN_PRIO_CMD  0x005   High Prio Commands, e.g. bugwiper start/stop
-CN_CMD       0x010   Low Prio Commands, e.g. MC, ballast or bugs change
-CN_NMEA      0x015   Standard NMEA messages, e.g. GPGGA, GPRMC, etc.
-CN_NS_NMEA   0x020   Non Standard NMEA messages, e.g. PFLAU, etc.
-CN_PRIO_SENS 0x025   High prio sensor data, such as temperature, voltage
-CN_SENS      0x030   Low prio sensor data, such as TE or Baro pressure data, 
+
+
+|TAG          |ID      |Purpose|
+|CN_PRIO_CMD  |0x005   |High Prio Commands, e.g. bugwiper start/stop|
+|CN_CMD       |0x010   |Low Prio Commands, e.g. MC, ballast or bugs change|
+|CN_NMEA      |0x015   |Standard NMEA messages, e.g. GPGGA, GPRMC, etc.|
+|CN_NS_NMEA   |0x020   |Non Standard NMEA messages, e.g. PFLAU, etc.|
+|CN_PRIO_SENS |0x025   |High prio sensor data, such as temperature, voltage|
+|CN_SENS      |0x030   |Low prio sensor data, such as TE or Baro pressure data|
 
  
