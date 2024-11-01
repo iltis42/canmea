@@ -23,7 +23,10 @@ The ID's are hardcoded and directly linked with the capability of the device tha
 |CN_PRIO_CMD  |0x005   |High Prio Commands, e.g. bugwiper start/stop|
 |CN_CMD       |0x010   |Low Prio Commands, e.g. MC, ballast or bugs change|
 |CN_NMEA      |0x015   |Standard NMEA messages, e.g. GPGGA, GPRMC, etc.|
-|CN_NS_NMEA   |0x020   |Non Standard NMEA messages, e.g. PFLAU, etc.|
+|CN_NS_NMEA   |0x020   |XCV Master: Non Standard NMEA messages, e.g. !x |
+|CN_NS_NMEA   |0x021   |XCV Master: Non Standard NMEA messages, e.g. !x chunks |
+|CN_NS_NMEA_CL|0x022   |XCV Client: Non Standard NMEA messages, e.g. !x |
+|CN_NS_NMEA_CL|0x023   |XCV Client: Non Standard NMEA messages, e.g. !x chunks |
 |CN_PRIO_SENS |0x025   |High prio sensor data, such as temperature, voltage|
 |CN_SENS      |0x030   |Low prio sensor data, such as TE or Baro pressure data|
 
